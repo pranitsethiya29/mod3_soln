@@ -1,3 +1,6 @@
+*{
+border-style: border-box;
+}
 body {
   font-size: 16px;
   color: #fff;
@@ -7,14 +10,31 @@ body {
 #Chicken ,#Beer,#Sushi
 {
   background-color:   #DEDEDE;
+  margin-bottom:  20px;
+  margin-top: 20px;
+
 
 }
+
+p
+{
+  margin: 5px;
+}
+
+ .row
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 #main-content
 {
   color: black;
 
 }
 
+
+  
 /** HEADER **/
 #header-nav {
   background-color: #f6b319;
@@ -26,7 +46,11 @@ h1{
   color: #000000
 }
 .navbar-brand {
-  padding-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 20px;
+ 
+
 }
 
 .navbar-brand h1 { /* Restaurant name */
@@ -36,9 +60,9 @@ h1{
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: .5;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -57,7 +81,6 @@ h1{
 #nav-list a span {
   font-size: 1.8em;
 }
-
 
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -84,20 +107,14 @@ h1{
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
+  
+
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  
+
 
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
