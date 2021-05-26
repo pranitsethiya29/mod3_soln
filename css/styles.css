@@ -1,13 +1,18 @@
-
-
-
-
-
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
+}
+
+#Chicken ,#Beer,#Sushi
+{
+  background-color:   #DEDEDE;
+
+}
+#main-content
+{
+  color: black;
+
 }
 
 /** HEADER **/
@@ -17,6 +22,9 @@ body {
   border: 0;
 }
 
+h1{
+  color: #000000
+}
 .navbar-brand {
   padding-top: 25px;
 }
@@ -35,6 +43,7 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
+
 #nav-list {
   margin-top: 10px;
 }
@@ -50,6 +59,7 @@ body {
 }
 
 
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
@@ -59,3 +69,45 @@ body {
 }
 /* END HEADER */
 
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+ 
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+
+  /* End Header */
+
+}
